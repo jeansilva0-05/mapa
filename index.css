@@ -1,0 +1,72 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #242e49;
+}
+.content {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch; /* Estica os itens verticalmente */
+    background-color: #cbd7d1;
+    width: 90%; /* Define largura como uma porcentagem para maior flexibilidade */
+    max-width: 1200px; /* Limita a largura máxima */
+    border-radius: 15px;
+    overflow: hidden; /* Evita elementos saindo do container */
+}
+iframe {
+    width: 100%; /* O iframe ocupa 100% do espaço do container lateral */
+    max-width: 600px; /* Define um limite para evitar expansão excessiva */
+    height: 100%; /* Preenche toda a altura do container */
+    min-height: 450px; /* Mantém uma altura mínima */
+    border: 0;
+}
+.content_body_1 {
+    flex: 1; /* O iframe ocupa metade do espaço disponível */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.content_body_2 {
+    flex: 1; /* O formulário ocupa a outra metade */
+    padding: 20px;
+    text-align: center;
+}
+h1 {
+    margin: 10px;
+    color: #393939;
+}
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    color: black;
+    border-radius: 10px;
+    border: 0;
+    resize: none; /* Remove redimensionamento do textarea */
+}
+textarea.input_1 {
+    height: 110px;
+}
+button {
+    width: 150px;
+    height: 50px;
+    margin: 20px auto;
+    border-radius: 20px;
+    border: 0;
+    font-weight: 700;
+    background-color: #7075;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.3s;
+}
+button:hover {
+    background-color: #6ba3be;
+    color: #1c1c1c;
+}
